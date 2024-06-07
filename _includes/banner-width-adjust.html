@@ -1,0 +1,30 @@
+<script>
+  let resizeTimer;
+  function resizeBanners() {
+    var containerElem = window.getComputedStyle(
+      document.querySelector("#main-wrapper .container")
+    );
+    var fullWidth =
+      parseFloat(containerElem.width) +
+      parseFloat(containerElem.marginLeft) +
+      parseFloat(containerElem.marginRight);
+    const bannerElems = document.getElementsByTagName("banner");
+    for (let i = 0; i < bannerElems.length; i++) {
+      const bn = bannerElems[i];
+      const bnStyle = window.getComputedStyle(bn);
+      bn.style.marginLeft = bn.style.marginRight = "0px";
+      const originWidth = parseFloat(bnStyle.width);
+      bn.style.marginRight = bn.style.marginLeft = `${
+        (originWidth - fullWidth) / 2.0
+      }px`;
+    }
+  }
+  function debounceResizeBanners() {
+    if (resizeTimer) {
+      clearTimeout(resizeTimer);
+    }
+    resizeTimer = setTimeout(resizeBanners, 100);
+  }
+  resizeBanners();
+  window.addEventListener("resize", debounceResizeBanners);
+</script>

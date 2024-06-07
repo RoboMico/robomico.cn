@@ -1,10 +1,20 @@
-#  The contact options.
+- type: bilibili
+  icon: "fa-brands fa-bilibili"
+  url: "https://space.bilibili.com/40201225"
+
+- type: twitter
+  icon: "fa-brands fa-x-twitter"
 
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: ncm
+  icon: "fa-solid fa-music"
+  url: "https://music.163.com/#/artist?id=61854940"
+
+- type: youtube
+  icon: "fa-brands fa-youtube"
+  url: "https://www.youtube.com/@robomico"
 
 - type: email
   icon: "fas fa-envelope"
@@ -13,20 +23,3 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
-# Uncomment and complete the url below to enable more contact options
-#
-# - type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
-#
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
-#
-# - type: stack-overflow
-#   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
-#
-# - type: bluesky
-#   icon: 'fa-brands fa-bluesky'
-#   url: ''                   # Fill with your Bluesky profile link

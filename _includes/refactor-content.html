@@ -6,13 +6,8 @@
   In order to allow a wide table to scroll horizontally,
   we suround the markdown table with `<div class="table-wrapper">` and `</div>`
 -->
-
 {% if _content contains '<table' %}
-  {% assign _content = _content
-    | replace: '<table', '<div class="table-wrapper"><table'
-    | replace: '</table>', '</table></div>'
-    | replace: '<code><div class="table-wrapper">', '<code>'
-    | replace: '</table></div></code>', '</table></code>'
+  {% assign _content = _content | replace: '<table', '<div class="table-wrapper"><table' | replace: '</table>', '</table></div>' | replace: '<code><div class="table-wrapper">', '<code>' | replace: '</table></div></code>', '</table></code>'
   %}
 {% endif %}
 
@@ -21,24 +16,16 @@
   https://github.com/penibelst/jekyll-compress-html/issues/101
   https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
 -->
-
 {% if _content contains '<pre class="highlight">' %}
-  {% assign _content = _content
-    | replace: '<div class="highlight"><pre class="highlight"><code', '<div class="highlight"><code'
-    | replace: '</code></pre></div>', '</code></div>'
+  {% assign _content = _content | replace: '<div class="highlight"><pre class="highlight"><code', '<div class="highlight"><code' | replace: '</code></pre></div>', '</code></div>'
   %}
 {% endif %}
 
 <!-- Change the icon of checkbox -->
 
 {% if _content contains '<input type="checkbox"' %}
-  {% assign _content = _content
-    | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />',
-      '<i class="fas fa-check-circle fa-fw checked"></i>'
-    | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />',
-      '<i class="far fa-circle fa-fw"></i>'
-  %}
-{% endif %}
+  {% assign _content = _content | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />', '<i class="fas fa-check-circle fa-fw checked"></i>' | replace: '<input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />', '<i class="far fa-circle fa-fw"></i>'
+  %}{% endif %}
 
 <!-- Handle images -->
 
@@ -48,7 +35,7 @@
   {% assign _img_content = null %}
   {% assign _img_snippets = _content | split: IMG_TAG %}
 
-  {% for _img_snippet in _img_snippets %}
+    {% for _img_snippet in _img_snippets %}
     {% if forloop.first %}
       {% assign _img_content = _img_snippet %}
       {% continue %}
@@ -76,7 +63,6 @@
       {% assign _pair = _attr | split: '="' %}
       {% capture _key %}{{ _pair | first }}{% endcapture %}
       {% capture _value %}{{ _pair | last | remove: '"' }}{% endcapture %}
-
       {% case _key %}
         {% when 'src' %}
           {% assign _src = _value %}
@@ -99,7 +85,6 @@
     {%- capture _img_url -%}
       {% include media-url.html src=_src subpath=page.media_subpath %}
     {%- endcapture -%}
-
     {% assign _path_prefix = _img_url | remove: _src %}
 
     {% unless _src contains '//' %}
@@ -115,7 +100,7 @@
       {% unless _lqip contains 'data:' %}
         {% assign _lqip_alt = 'lqip="' | append: _path_prefix %}
         {% assign _left = _left | replace: 'lqip="', _lqip_alt %}
-      {% endunless %}
+    {% endunless %}
 
       <!-- add image placeholder -->
       {% assign _left = _left | replace: 'src=', 'data-src=' | replace: ' lqip=', ' data-lqip="true" src=' %}
@@ -150,18 +135,13 @@
 
       {% else %}
         <!-- create the image wrapper -->
-        {% assign _wrapper_start = _final_src
-          | default: _src
-          | prepend: '<a href="'
-          | append: '" class="popup img-link '
-          | append: _class
-          | append: '">'
+        {% assign _wrapper_start = _final_src | default: _src | prepend: '<a href="' | append: '" class="popup img-link ' | append: _class | append: '">'
         %}
 
         {% assign _img_content = _img_content | append: _wrapper_start %}
         {% assign _right = '></a' | append: _right %}
       {% endif %}
-    {% endif %}
+  {% endif %}
 
     <!-- combine -->
     {% assign _img_content = _img_content | append: IMG_TAG | append: _left | append: _right %}
@@ -197,21 +177,12 @@
       {% capture _label %}
         <span data-label-text="{{ _label_text | strip }}"><i class="{{ _label_icon }}"></i></span>
       {% endcapture %}
-
-      {% assign _new_content = _new_content
-        | append: _snippet
-        | append: '<div class="code-header">'
-        | append: _label
-        | append: '<button aria-label="copy" data-title-succeed="'
-        | append: site.data.locales[include.lang].post.button.copy_code.succeed
-        | append: '"><i class="far fa-clipboard"></i></button></div>'
-        | append: '<div class="highlight"><code>'
+      {% assign _new_content = _new_content | append: _snippet | append: '<div class="code-header">' | append: _label | append: '<button aria-label="copy" data-title-succeed="' | append: site.data.locales[include.lang].post.button.copy_code.succeed | append: '"><i class="far fa-clipboard"></i></button></div>' | append: '<div class="highlight"><code>'
       %}
     {% endif %}
   {% endfor %}
 
-  {% assign _content = _new_content %}
-{% endif %}
+  {% assign _content = _new_content %}{% endif %}
 
 <!-- Create heading anchors -->
 
@@ -233,9 +204,7 @@
       {% endif %}
 
       {% assign id = snippet | split: '"' | first %}
-      {% assign anchor = '<a href="#'
-        | append: id
-        | append: '" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>'
+      {% assign anchor = '<a href="#' | append: id | append: '" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>'
       %}
 
       {% assign left = snippet | split: mark_end | first %}
@@ -248,8 +217,16 @@
     {% assign _heading_content = _new_content %}
   {% endif %}
 {% endfor %}
-
 {% assign _content = _heading_content %}
+
+{% assign collapse_head = "<!-- collapse-start -->" %}
+{% assign collapse_tail = "<!-- collapse-end -->" %}
+
+{% if _content contains collapse_head %}
+  {% capture _details_begin_tag %}
+    <details> <summary> {{ site.data.locales[include.lang].spoiler-summary }} </summary>
+  {% endcapture %}
+  {% assign _content = _content | replace: collapse_head, _details_begin_tag | replace: collapse_tail, "</details>" %}{% endif %}
 
 <!-- return -->
 {{ _content }}

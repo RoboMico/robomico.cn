@@ -1,0 +1,7 @@
+{% assign dest_url = include.url %}
+
+{% if include.lang == "zh-CN" %}
+  {% assign dest_url = "/zh-CN" | append: dest_url %}
+{% endif %}
+
+{{ dest_url }}

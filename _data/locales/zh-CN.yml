@@ -1,6 +1,20 @@
 # The layout text of site
 
+bio: "机圈 / UP主 / 音乐人 / 臭打游戏 / 软件开发 / 科技迷 / 中国人 🇨🇳"
+memset-slogan: '音乐源自<font color="#4493fc">理性</font>。'
+ncm: "网易云音乐"
 # ----- Commons label -----
+
+spoiler-summary: "点击展开"
+
+contacts:
+  bilibili: 哔哩哔哩
+  twitter: Twitter (x.com)
+  github: GitHub
+  ncm: 网易云音乐
+  youtube: YouTube
+  email: 电子邮箱
+  rss: RSS 订阅
 
 layout:
   post: 文章
@@ -11,10 +25,18 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: 首页
+  memset0x3f: memset(0x3f)
   categories: 分类
   tags: 标签
-  archives: 归档
+  timeline: 时间线
   about: 关于
+  gallery: 画廊
+  blog: 博客
+  links: 链接
+
+footer-links:
+  privacy: 隐私方针
+  copyright: 音乐版权
 
 # the text displayed in the search bar & search results
 search:
@@ -37,9 +59,9 @@ copyright:
   # Displayed in the footer
   brief: 保留部分权利。
   verbose: >-
-    除非另有说明，本网站上的博客文章均由作者按照知识共享署名 4.0 国际 (CC BY 4.0) 许可协议进行授权。
+    除非另有说明，本网站上的内容均由作者按照知识共享署名 4.0 国际 (CC BY 4.0) 许可协议进行授权。
 
-meta: 本站采用 :PLATFORM 主题 :THEME
+meta: 本站采用 :PLATFORM，主题基于 :THEME 魔改
 
 not_found:
   statment: 抱歉，我们放错了该 URL，或者它指向了不存在的内容。

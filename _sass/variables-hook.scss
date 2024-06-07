@@ -1,3 +1,32 @@
 /*
-  Appending custom SCSS variables will override the default ones in `_sass/addon/variables.scsss`
+  Appending custom SCSS variables will override the default ones in `_sass/addon/variables.scss`
 */
+
+@mixin color-light() {
+  --main-bg: #f9f9f9 !important;
+  --topbar-bg: #efefef !important;
+  --topbar-shadow: #a1a1a1;
+}
+@mixin color-dark() {
+  --topbar-bg: #252525 !important;
+  --topbar-shadow: #393939;
+}
+
+@media (prefers-color-scheme: light) {
+  html[data-mode='dark'] {
+    @include color-dark;
+  }
+  html:not([data-mode]),
+  html[data-mode='light'] {
+    @include color-light;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html[data-mode='light'] {
+    @include color-light;
+  }
+  html:not([data-mode]),
+  html[data-mode='dark'] {
+    @include color-dark;
+  }
+}
