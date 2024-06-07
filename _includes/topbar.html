@@ -40,7 +40,7 @@
       {% endfor %}
 
       <nav id="nav-links" class="with-dropdown">
-        <a>
+        <a data-proofer-ignore>
           <i class="fa-solid fa-link"></i>
           {{ site.data.locales[lang].tabs.links }}
         </a>
@@ -99,7 +99,8 @@
         class="btn btn-link nav-link"
         aria-label="Switch Language"
         id="lang-toggle"
-        href="{% include get-url-switch-lang.html lang=lang url=page.url %}">
+        href="{% include get-url-switch-lang.html lang=lang url=page.url %}"
+        data-proofer-ignore>
         <i class="fa-solid fa-language"></i>
       </a>
     </div>
@@ -123,7 +124,8 @@
         class="btn btn-link nav-link"
         aria-label="Switch Language"
         id="lang-toggle-m"
-        href="{% include get-url-switch-lang.html lang=lang url=page.url %}">
+        href="{% include get-url-switch-lang.html lang=lang url=page.url %}"
+        data-proofer-ignore>
         <i class="fa-solid fa-language"></i>
       </a>
     </div>

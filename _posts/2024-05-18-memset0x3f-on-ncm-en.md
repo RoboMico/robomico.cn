@@ -18,7 +18,7 @@ description: Standing on the new starting line of my music career.
 
 Works in the future will also be published on Netease Cloud Music _(abbr. as NCM below)_ simultaneously. Everyone can listen to my songs for free or download them with payment on the platform.
 
-My [copyright notice](/static-pages/memset0x3f-license-en) still applies so you can still use all of my original music works (except otherwise specified) for free. Also the free download links of my past or future works will be continuously put on the [download center](/downloads).
+My [copyright notice](/music-copyright) still applies so you can still use all of my original music works (except otherwise specified) for free. Also the free download links of my past or future works will be continuously put on the [memset(0x3f) special page](/memset0x3f).
 
 Limited by the time and energy, I will also suspend my audio.com and Afdian accounts at the same time. If you want to support me financially, you can give me a donate on [Bilibili](https://space.bilibili.com/40201225), or download/purchase my music works on NCM.
 
