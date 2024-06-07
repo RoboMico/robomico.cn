@@ -18,6 +18,12 @@ layout: compress
     <body>
     {% include topbar.html lang=lang %}
     {% include sidebar.html lang=lang %}
+
+    <!-- search related elements placeholder to prevent js from yapping errors -->
+    <div id="search-trigger" style="display: none"></div>
+    <div id="search-cancel" style="display: none"></div>
+    <div id="search-input" style="display: none"></div>
+
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column px-xxl-5">
         <div class="row flex-grow-1">

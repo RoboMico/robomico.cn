@@ -9,6 +9,8 @@ permalink: /privacy-policy
 
 This is a static blog website built with Jekyll and do not upload or collect any personal information from users.
 
+PWA feature is enabled on this site, which may access to your local storage for caching pages to speed up loading.
+
 To enhance user experience, the site integrates some online services provided by third parties, whose providers may collect and store some of your information while you browse the site.
 
 ## About Third-Party Services
