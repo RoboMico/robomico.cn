@@ -45,7 +45,7 @@ analytics:
   goatcounter:
     id: robomico
 
-# Pageviews settings
+# Page views settings
 pageviews:
   provider: goatcounter
 
@@ -57,8 +57,8 @@ pageviews:
 #
 # Available options:
 #
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
+#     light — Use the light color scheme
+#     dark — Use the dark color scheme
 #
 theme_mode: # [light|dark]
 
@@ -103,7 +103,10 @@ assets:
 pwa:
   enabled: true # the option for PWA feature
   cache:
-    enabled: false
+    enabled: true # The option for PWA offline cache
+    # Paths defined here will be excluded from the PWA cache.
+    # Usually its value is the `baseurl` of another website that
+    # shares the same domain name as the current website.
     deny_paths:
 
 # The base URL of your site
