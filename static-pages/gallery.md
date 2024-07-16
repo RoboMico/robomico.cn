@@ -27,6 +27,9 @@ _(By [Chokohotcha](https://twitter.com/Chokohotcha)) Me and 5 other random OCs!_
 ![e-slug.jpeg](https://storage.live.com/items/5FA5DFAE47A544F!121386:/e-slug.jpeg?authkey=%21AC_KgUZjY4lFAV8){: w="750"}
 _By [E-Slug][e-slug]_
 
+![cute-avatar.png](https://storage.live.com/items/5FA5DFAE47A544F!121390:/cute-avatar.png?authkey=%21AC_KgUZjY4lFAV8){: w="600"}
+_Originally by [Nick_Kloppy][nick_kloppy], redrawn & colored by me_
+
 ---
 
 > Three variations of my logo.
@@ -47,3 +50,4 @@ Spring / Autumn | Summer | Winter
 [supergee]: https://twitter.com/Super_Gee53
 [ultrio]: https://ultriog.github.io/ultrio-base-website/
 [e-slug]: https://twitter.com/ThaE_Slug
+[nick_kloppy]: https://twitter.com/Nick_Kloppy

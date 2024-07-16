@@ -28,6 +28,9 @@ _（作者：[Chokohotcha](https://twitter.com/Chokohotcha)）我和其他 5 只
 ![e-slug.jpeg](https://storage.live.com/items/5FA5DFAE47A544F!121386:/e-slug.jpeg?authkey=%21AC_KgUZjY4lFAV8){: w="750"}
 _作者：[E-Slug][e-slug]_
 
+![cute-avatar.png](https://storage.live.com/items/5FA5DFAE47A544F!121390:/cute-avatar.png?authkey=%21AC_KgUZjY4lFAV8){: w="600"}
+_原画作者：[Nick_Kloppy][nick_kloppy]，重绘+上色：我_
+
 ---
 
 > _Logo 的三种样式。_
@@ -48,3 +51,4 @@ _作者：[E-Slug][e-slug]_
 [supergee]: https://twitter.com/Super_Gee53
 [ultrio]: https://ultriog.github.io/ultrio-base-website/
 [e-slug]: https://twitter.com/ThaE_Slug
+[nick_kloppy]: https://twitter.com/Nick_Kloppy
