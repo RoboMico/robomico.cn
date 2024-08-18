@@ -35,7 +35,7 @@ permalink: /zh-CN/memset0x3f
 ### 原创单曲
 
 > 对于有特别标注曲绘作者的曲目，对应的曲绘版权归原画师所有，使用前请先征得他们的同意。
-{: .prompt-info }
+> {: .prompt-info }
 
 memset(0x3f) - Disk New <br> ![disknew.png](https://storage.live.com/items/5FA5DFAE47A544F!121300:/disknew.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121299:/memset(0x3f)%20-%20Disk%20New.mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121300:/disknew.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121301:/disknew.xcf?authkey=%21AC_KgUZjY4lFAV8)
 
@@ -43,16 +43,17 @@ memset(0x3f) - Disk Pand0ra <br> ![disk-pand0ra.png](https://storage.live.com/it
 
 memset(0x3f) - Retro Secret <br> ![retro-secret.png](https://storage.live.com/items/5FA5DFAE47A544F!121316:/retro-secret.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121314:/memset(0x3f)%20-%20Retro%20Secret.mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121316:/retro-secret.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121315:/retro-secret.xcf?authkey=%21AC_KgUZjY4lFAV8)
 
-memset(0x3f) - Ohm's Law <br> ![ohms-law.png](https://storage.live.com/items/5FA5DFAE47A544F!121319:/ohms-law.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121317:/memset(0x3f)%20-%20Ohm's%20Law.mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121319:/ohms-law.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121318:/ohms-law.xcf?authkey=%21AC_KgUZjY4lFAV8)
+memset(0x3f) - Ohm's Law <br> ![ohms-law.png](https://storage.live.com/items/5FA5DFAE47A544F!121319:/ohms-law.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121317:/memset(0x3f)%20-%20Ohm%27s%20Law.mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121319:/ohms-law.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121318:/ohms-law.xcf?authkey=%21AC_KgUZjY4lFAV8)
 
 memset(0x3f) - First Awakening <br> (ArtifiSouls 同人曲目) <br> 曲绘作者：[Soap](https://artifisoap.carrd.co/) <br> ![first-awakening.png](https://storage.live.com/items/5FA5DFAE47A544F!121327:/first-awakening.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121328:/memset(0x3f)%20-%20First%20Awakening.mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121327:/first-awakening.png?authkey=%21AC_KgUZjY4lFAV8) | [SVG](https://storage.live.com/items/5FA5DFAE47A544F!121326:/first-awakening.svg?authkey=%21AC_KgUZjY4lFAV8)
 
 memset(0x3f) - Melee Droid Tier 2 <br> (ArtifiSouls 同人曲目) <br> 曲绘作者：[Soap](https://artifisoap.carrd.co/) <br> ![md-t2.png](https://storage.live.com/items/5FA5DFAE47A544F!121380:/cover.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121382:/memset(0x3f)%20-%20Melee%20Droid%20Tier%202.mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121380:/cover.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121379:/cover.xcf?authkey=%21AC_KgUZjY4lFAV8) | [SVG](https://storage.live.com/items/5FA5DFAE47A544F!121378:/cover-elem.svg?authkey=%21AC_KgUZjY4lFAV8)
 
+memset(0x3f) - Everett's Law <br> vivid/stasis 2024 公募落选 <br> （无曲绘） | [MP3](https://storage.live.com/items/5FA5DFAE47A544F!121392:/Everett%27s%20Law.mp3?authkey=%21AC_KgUZjY4lFAV8)
+
 ### Remixes
 
 > **注意**：部分曲目的 Remix 并未征得原作者同意。
-{: .prompt-warning }
+> {: .prompt-warning }
 
 Darude - Sandstorm (0x3f Bootleg) <br> ![sandstorm-remix.png](https://storage.live.com/items/5FA5DFAE47A544F!121324:/sandstorm-remix.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121325:/Sandstorm(0x3f%20Bootleg).mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121324:/sandstorm-remix.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121323:/sandstorm-remix.xcf?authkey=%21AC_KgUZjY4lFAV8)
-

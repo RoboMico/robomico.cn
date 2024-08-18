@@ -34,7 +34,7 @@ Intro Animation (made with CSS, open the html file in your browser) | [HTML](htt
 ### Original Singles
 
 > For tracks whose artwork's author is specially annotated, the artwork is copyrighted to the original artist. Please ask their permission before using those artworks.
-{: .prompt-info }
+> {: .prompt-info }
 
 memset(0x3f) - Disk New <br> ![disknew.png](https://storage.live.com/items/5FA5DFAE47A544F!121300:/disknew.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121299:/memset(0x3f)%20-%20Disk%20New.mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121300:/disknew.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121301:/disknew.xcf?authkey=%21AC_KgUZjY4lFAV8)
 
@@ -48,10 +48,11 @@ memset(0x3f) - First Awakening <br> (Fanmade song for ArtifiSouls) <br> Artwork 
 
 memset(0x3f) - Melee Droid Tier 2 <br> (Fanmade song for ArtifiSouls) <br> Artwork by [Soap](https://artifisoap.carrd.co/) <br> ![md-t2.png](https://storage.live.com/items/5FA5DFAE47A544F!121380:/cover.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121382:/memset(0x3f)%20-%20Melee%20Droid%20Tier%202.mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121380:/cover.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121379:/cover.xcf?authkey=%21AC_KgUZjY4lFAV8) | [SVG](https://storage.live.com/items/5FA5DFAE47A544F!121378:/cover-elem.svg?authkey=%21AC_KgUZjY4lFAV8)
 
+memset(0x3f) - Everett's Law <br> A failed entry for vivid/stasis 2024 Song Contest <br> (No Artwork) | [MP3](https://storage.live.com/items/5FA5DFAE47A544F!121392:/Everett%27s%20Law.mp3?authkey=%21AC_KgUZjY4lFAV8)
+
 ### Remixes
 
 > **Note**: Some remixes are not officially permitted by the original author.
-{: .prompt-warning }
+> {: .prompt-warning }
 
 Darude - Sandstorm (0x3f Bootleg) <br> ![sandstorm-remix.png](https://storage.live.com/items/5FA5DFAE47A544F!121324:/sandstorm-remix.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121325:/Sandstorm(0x3f%20Bootleg).mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121324:/sandstorm-remix.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121323:/sandstorm-remix.xcf?authkey=%21AC_KgUZjY4lFAV8)
-
