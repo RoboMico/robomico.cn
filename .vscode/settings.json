@@ -22,6 +22,15 @@
   "scss.validate": false,
   "less.validate": false,
   // Stylint extension settings
-  "stylelint.snippet": ["css", "scss"],
-  "stylelint.validate": ["css", "scss"]
+  "stylelint.snippet": [
+    "css",
+    "scss"
+  ],
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "cSpell.words": [
+    "Tek's"
+  ]
 }

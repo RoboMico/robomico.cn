@@ -19,7 +19,7 @@ permalink: /about
 
 ## In Real Life
 
-- An average student in senior high (about to be in senior grade)
+- An average student in senior high (in Senior grade so plz do not disturb me)
 - Lives in Jiangxi Province, China
 - Natively speaking Chinese, English is ok for simple conversations
 - _Used-to-be_ Competitive Programming (CP) player, Provincial First Prize winner in NOIP 2023
@@ -27,4 +27,3 @@ permalink: /about
 ## Contacts
 
 Social links & my email are in the Links menu or at the bottom of the sidebar. Commercial requests and commissions are currently closed.
-

@@ -45,9 +45,6 @@ a {
   #topbar-wrapper {
     height: 4rem;
   }
-  #main-wrapper {
-    margin-top: 4rem;
-  }
 }
 @media all and (max-width: 849px) {
   [sidebar-display] #main-wrapper {
@@ -65,9 +62,6 @@ a {
   #topbar-wrapper {
     height: 3rem;
   }
-  #main-wrapper {
-    margin-top: 3rem;
-  }
 }
 #sidebar {
   z-index: 10086;
@@ -78,7 +72,6 @@ a {
 }
 #topbar-wrapper {
   z-index: 10085;
-  position: fixed;
   box-shadow: 1px 2px 2px var(--topbar-shadow);
   left: 0;
   right: 0;
