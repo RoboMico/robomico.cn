@@ -1,6 +1,6 @@
 ---
 title: The Origin - Chapter 1
-date: 2024-09-10 12:04:37 +0800
+date: 2024-09-11 12:38:18 +0800
 categories: [Novels]
 tags: [en, sci-fi, the-origin-series]
 lang: en
