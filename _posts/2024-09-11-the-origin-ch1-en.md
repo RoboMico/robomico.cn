@@ -32,7 +32,7 @@ He rolls up the venetian blind a little, revealing a bar of the window near the 
 
 "Yes, and in an e-waste dump." He says in a calm tone as he closes the blinds.
 
-"**What!?** I was abandoned after the explosion?"
+"**What?!** I was abandoned after the explosion?"
 
 "What explosion?"
 
