@@ -108,6 +108,7 @@ pwa:
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
     deny_paths:
+      - "987654321"
 
 # The base URL of your site
 baseurl: ""
