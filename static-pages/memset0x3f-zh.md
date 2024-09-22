@@ -13,7 +13,7 @@ permalink: /zh-CN/memset0x3f
 
 - 业余音乐人，始于 2023.3
 - 水平依然很菜
-- 擅长以 Trance 为主的融合曲风
+- 曲风：我不在乎
 - 梦想曲子有一天能被音游收录
 - [Reaper](https://www.reaper.fm/) 用户（曾经用过 [Cakewalk](https://www.bandlab.com/products/cakewalk)）
 

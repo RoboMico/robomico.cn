@@ -12,7 +12,7 @@ permalink: /memset0x3f
 
 - Amateur music producer since 2023.3
 - is still a noob
-- Genre: mainly in Trance, in a combination with many other styles
+- Genre: I don't care
 - Dreaming that my songs could be included in a rhythm game one day
 - [Reaper](https://www.reaper.fm/) user (previously used [Cakewalk](https://www.bandlab.com/products/cakewalk))
 
