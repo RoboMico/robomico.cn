@@ -7,6 +7,11 @@ ncm: "Netease Cloud Music"
 
 spoiler-summary: "Click to Unfold"
 
+buttons:
+  view-source: "View the Source Code of This Page"
+  switch-theme: "Switch Light/Dark Theme"
+  switch-language: "Switch Language"
+
 contacts:
   bilibili: Bilibili
   twitter: Twitter (x.com)
@@ -62,7 +67,7 @@ copyright:
     Except where otherwise noted, the contents on this site are licensed
     under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
 
-meta: Modified from the :THEME theme for :PLATFORM.
+meta: Built with :PLATFORM and using modified :THEME theme.
 
 not_found:
   statement: Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.

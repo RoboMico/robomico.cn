@@ -1,5 +1,23 @@
 /* The common styles */
 
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 html {
   font-size: 16px;
 
@@ -33,6 +51,9 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   font-family: $font-family-base;
+
+  --container-width: 0px;
+  --mico-orange: #f98d17;
 }
 
 /* --- Typography --- */
@@ -71,6 +92,7 @@ body {
 
 a {
   @extend %link-color;
+  @extend %clickable-transition;
 
   text-decoration: none;
 }
@@ -688,7 +710,7 @@ $btn-mb: 0.5rem;
   height: 100%;
   overflow-y: auto;
   width: $sidebar-width;
-  z-index: 99;
+  z-index: 10086;
   background: var(--sidebar-bg);
   border-right: 1px solid var(--sidebar-border-color);
 
@@ -703,7 +725,7 @@ $btn-mb: 0.5rem;
 
   %sidebar-link-hover {
     &:hover {
-      color: var(--sidebar-active-color);
+      color: var(--mico-orange);
     }
   }
 
@@ -783,6 +805,7 @@ $btn-mb: 0.5rem;
         font-weight: 600;
 
         &:hover {
+          color: var(--mico-orange);
           background-color: var(--sidebar-hover-bg);
         }
 
@@ -857,10 +880,13 @@ $btn-mb: 0.5rem;
       line-height: $btn-size;
     }
 
-    #mode-toggle {
+    #mode-toggle-side {
       @extend %button;
-      @extend %sidebar-links;
-      @extend %sidebar-link-hover;
+      @extend %clickable-transition;
+      &:hover {
+        @extend %link-hover;
+        border-bottom: 0px;
+      }
     }
 
     .icon-border {
@@ -883,11 +909,11 @@ $btn-mb: 0.5rem;
   }
 
   .nav-link {
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .post-preview {
-    transition: background-color 0.35s ease-in-out;
+    transition: background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
 }
 
@@ -907,32 +933,81 @@ $btn-mb: 0.5rem;
 #topbar-wrapper {
   height: $topbar-height;
   background-color: var(--topbar-bg);
-}
-
-#topbar {
-  button i {
-    color: #999999;
+  z-index: 10085;
+  box-shadow: 1px 2px 2px var(--topbar-shadow);
+  left: 0;
+  right: 0;
+  top: 0;
+  a {
+    padding: 0.5rem 0.5rem;
   }
-
-  #breadcrumb {
-    font-size: 1rem;
-    color: var(--text-muted-color);
-    padding-left: 0.5rem;
-
-    a:hover {
-      @extend %link-hover;
+  #topbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    #topbar-site-title {
+      justify-content: flex-start;
+      align-items: center;
+      font-family: inherit;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: var(--text-color);
+      #avatar {
+        width: 3rem;
+        height: 3rem;
+      }
     }
-
-    span {
-      &:not(:last-child) {
-        &::after {
-          content: '›';
-          padding: 0 0.3rem;
+    #topbar-navbar {
+      height: 100%;
+      align-items: center;
+      nav {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        a {
+          color: var(--text-color);
+          &:hover {
+            @extend %link-hover;
+            border-bottom: 0px;
+          }
+        }
+      }
+    }
+    #topbar-options {
+      justify-content: flex-end;
+      margin-right: 0.3rem;
+      .btn {
+        @extend %clickable-transition;
+        margin-right: 1rem;
+        &:hover {
+          @extend %link-hover;
+          border-bottom: 0px;
+        }
+      }
+    }
+    #topbar-mobile-menu {
+      justify-content: flex-start;
+    }
+    #topbar-mobile-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      font-family: sans-serif;
+      color: var(--topbar-text-color);
+      text-align: center;
+      justify-content: flex-start;
+    }
+    #topbar-mobile-language {
+      justify-content: flex-end;
+      margin-right: 1rem;
+      a {
+        @extend %clickable-transition;
+        &:hover {
+          @extend %link-hover;
+          border-bottom: 0px;
         }
       }
     }
   }
-} /* #topbar */
+}
+/* #topbar */
 
 ::-webkit-input-placeholder {
   @include placeholder;
@@ -992,6 +1067,10 @@ search {
 #sidebar-trigger,
 #search-trigger {
   display: none;
+}
+
+#sidebar-trigger {
+  color: var(--bs-nav-link-color);
 }
 
 /* 'Cancel' link */
@@ -1119,6 +1198,7 @@ search {
   > .container {
     min-height: 100vh;
   }
+  margin-left: 0px !important;
 }
 
 #topbar-wrapper.row,
@@ -1353,7 +1433,7 @@ search {
   }
 } /* max-width: 849px */
 
-/* Sidebar is visible */
+/* Wide (Desktop) experience */
 @media all and (min-width: 850px) {
   /* Solved jumping scrollbar */
   html {
@@ -1402,6 +1482,44 @@ search {
   #topbar-title {
     text-align: left;
   }
+
+  #topbar-site-title,
+  #topbar-navbar,
+  #topbar-options {
+    display: flex;
+  }
+  #sidebar,
+  #topbar-mobile-menu,
+  #topbar-mobile-title,
+  #topbar-mobile-language {
+    display: none !important;
+  }
+  #topbar-wrapper {
+    height: 4rem;
+  }
+}
+
+/* Vertical (mobile) experience */
+@media all and (max-width: 849px) {
+  [sidebar-display] #main-wrapper {
+    transform: translateX(0px);
+    filter: brightness(0.5);
+    -webkit-backdrop-filter: brightness(1);
+    backdrop-filter: brightness(1);
+  }
+  #topbar-site-title,
+  #topbar-navbar,
+  #topbar-options {
+    display: none;
+  }
+  #topbar-mobile-menu,
+  #topbar-mobile-language {
+    display: flex;
+  }
+  #topbar-wrapper {
+    height: 3rem;
+    position: fixed;
+  }
 }
 
 /* Pad horizontal */
@@ -1424,6 +1542,15 @@ search {
     text-overflow: ellipsis;
     word-break: keep-all;
     white-space: nowrap;
+  }
+}
+
+/* hide title */
+@media all and (max-width: 1110px) {
+  #topbar-site-title {
+    #title-name {
+      visibility: collapse;
+    }
   }
 }
 
@@ -1540,3 +1667,123 @@ search {
     }
   }
 } /* min-width: 1650px */
+
+/* Banners */
+banner {
+  display: block;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+}
+#home-banner {
+  background-image: url(/assets/img/overlay.png), url(/assets/img/bg.png);
+  line-height: 1.75;
+  #banner-content {
+    padding: 12rem 0 12rem 0;
+    color: white;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 3px black;
+  }
+}
+#regular-banner {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  h1 {
+    color: #f2f2f2;
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: #111111 2px 4px 4px;
+  }
+}
+#memset-banner {
+  background-color: #292929;
+  margin-top: -5.45rem;
+  font-family: var(--bs-font-monospace), var(--bs-font-sans-serif);
+  p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s forwards;
+  }
+  .button-group {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s forwards;
+  }
+  .fake-button {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 32px;
+    box-shadow: 2px 2px 3px black;
+    i {
+      padding-right: 0.5rem;
+    }
+    a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+    }
+    a:hover {
+      color: white !important;
+    }
+    &.button-bili {
+      background-color: #00b3ee;
+    }
+    &.button-yt {
+      background-color: #ff0000;
+    }
+    &.button-ncm {
+      background-color: #e60026;
+    }
+  }
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: cubic-bezier(0.16, 1, 0.3, 1) 0.4s;
+  display: block;
+  position: absolute;
+  background-color: var(--sidebar-bg);
+}
+.dropdown-menu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 0.75rem 1rem;
+  &:hover {
+    background-color: var(--sidebar-hover-bg);
+  }
+}
+.with-dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0.5rem);
+}
+
+/* Overrides of some unwanted bootstrap styles */
+
+.ovrd-full-width {
+  width: 100% !important;
+}
+.footer-padding {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem !important;
+}

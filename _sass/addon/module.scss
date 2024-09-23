@@ -44,8 +44,8 @@
 }
 
 %link-hover {
-  color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
+  color: var(--mico-orange) !important;
+  border-bottom: 1px solid var(--mico-orange);
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@
 }
 
 %clickable-transition {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 %no-cursor {
@@ -89,7 +89,7 @@
     display: block;
     text-align: center;
     font-style: normal;
-    font-size: 80%;
+    font-size: 100%;
     padding: 0;
     color: #6d6c6c;
   }

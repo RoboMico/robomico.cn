@@ -7,6 +7,11 @@ ncm: "网易云音乐"
 
 spoiler-summary: "点击展开"
 
+buttons:
+  view-source: "查看本页面源代码"
+  switch-theme: "切换明暗主题"
+  switch-language: "切换语言"
+
 contacts:
   bilibili: 哔哩哔哩
   twitter: Twitter (x.com)
@@ -61,7 +66,7 @@ copyright:
   verbose: >-
     除非另有说明，本网站上的内容均由作者按照知识共享署名 4.0 国际 (CC BY 4.0) 许可协议进行授权。
 
-meta: 本站采用 :PLATFORM，主题基于 :THEME 魔改
+meta: 本站采用 :PLATFORM 打造，主题使用 :THEME 修改版
 
 not_found:
   statement: 抱歉，我们放错了该 URL，或者它指向了不存在的内容。

@@ -13,7 +13,7 @@
         alt="avatar"
         style="border-radius: 50% !important;"
         onerror="this.style.display='none'">
-      {{ site.title }}
+      <div id="title-name">{{ site.title }}</div>
     </div>
     <div id="topbar-navbar">
       {% for entry in site.data.navbar %}
@@ -87,11 +87,25 @@
       </nav>
     </div>
     <div id="topbar-options">
+      <a
+        type="button"
+        class="btn btn-link nav-link"
+        aria-label="View Source"
+        id="view-source"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        data-bs-original-title="{{ site.data.locales[lang].buttons.view-source }}"
+        href="{{ site.repo_url }}/tree/main/{{ page.path }}?plain=1">
+        <i class="fa-solid fa-code"></i>
+      </a>
       <button
         type="button"
         class="btn btn-link nav-link"
         aria-label="Switch Mode"
-        id="mode-toggle">
+        id="mode-toggle"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        data-bs-original-title="{{ site.data.locales[lang].buttons.switch-theme }}">
         <i class="fas fa-adjust"></i>
       </button>
       <a
@@ -99,6 +113,9 @@
         class="btn btn-link nav-link"
         aria-label="Switch Language"
         id="lang-toggle"
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        data-bs-original-title="{{ site.data.locales[lang].buttons.switch-language }}"
         href="{% include get-url-switch-lang.html lang=lang url=page.url %}"
         data-proofer-ignore>
         <i class="fa-solid fa-language"></i>

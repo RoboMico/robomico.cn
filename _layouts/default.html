@@ -27,7 +27,7 @@ layout: compress
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column px-xxl-5">
         <div class="row flex-grow-1">
-          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4 ovrd-full-width">
             {% if layout.refactor or layout.layout == 'default' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
@@ -49,7 +49,7 @@ layout: compress
 
         <div class="row">
           <!-- tail -->
-          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4 ovrd-full-width">
             {% for _include in layout.tail_includes %}
               {% assign _include_path = _include | append: '.html' %}
               {% include {{ _include_path }} lang=lang %}
