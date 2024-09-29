@@ -162,7 +162,8 @@ kbd {
 }
 
 hr {
-  border-color: var(--main-border-color);
+  border-width: 3px;
+  border-color: rgb(125, 125, 125);
   opacity: 1;
 }
 
