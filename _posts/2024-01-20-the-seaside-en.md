@@ -110,14 +110,14 @@ Andy puts on his backpack and walks back with Mico. The car follows the ruts in 
 
 <!-- collapse-start -->
 
-> This story happens in its **independent (fictional) universe**.
+> This story happens in its **independent (fictional) universe** and is NOT a part of [The Origin]({{ '/tags/the-origin-series/' | relative_url }}) universe.
 {: .prompt-info }
 <!-- prettier-ignore-end -->
 
 ### Characters
 
 Mico (Robot, Boy)
-: Using the main settings of _RoboMico_.
+: Intelligent robot, Andy's closest friend.
 
 Andy (Human, Boy)
 : Born on Mars. The owner and friend of Mico.

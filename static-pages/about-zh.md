@@ -18,6 +18,10 @@ permalink: /zh-CN/about
 - 喜欢的颜色：<font color="#11acdf">蓝（#11acdf）</font>、<font color="#f98d17">橙（#f98d17）</font>
 - 喜欢的游戏：Minecraft，各种音游（Phigros，Arcaea，osu!mania）
 
+## 背景故事
+
+详细请阅读[「起源」]({{ 'tags/起源-系列/' | relative_url }})系列小说（连载中）！
+
 ## 三次元现状
 
 - 苦逼高中生（高三了，请尽量不要打扰）

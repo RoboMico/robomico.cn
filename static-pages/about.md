@@ -17,6 +17,10 @@ permalink: /about
 - Fav color: <font color="#11acdf">Blue (#11acdf)</font>, <font color="#f98d17">Orange (#f98d17)</font>
 - Fav games: Minecraft, All kinds of rhythm games (Phigros, Arcaea, osu!mania, etc.)
 
+## Background Story
+
+Please read [The Origin]({{ '/tags/the-origin-series/' | relative_url }}) series novels (currently updating)!
+
 ## In Real Life
 
 - An average student in senior high (in Senior grade so plz do not disturb me)

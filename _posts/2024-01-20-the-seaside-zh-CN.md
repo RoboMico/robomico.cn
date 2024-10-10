@@ -108,16 +108,16 @@ Andy 背起包，带着 Mico 往回走。汽车沿着地上的辙痕原路返回
 > **剧透警告！** 请在阅读完正文后继续。
 {: .prompt-danger }
 
-<br><br><br><br><br><br>
+<!-- collapse-start -->
 
-> 这则故事发生在**独立的虚构世界观**中。
+> 这则故事发生在**独立的虚构世界观**中，与[「起源」]({{ 'tags/起源-系列/' | relative_url }})系列宇宙无关。
 {: .prompt-info }
 <!-- prettier-ignore-end -->
 
 ### 人物
 
 Mico（机器人男孩）
-: 使用 RoboMico 的主设定。
+: 智能机器人，Andy 最好的朋友。
 
 Andy（人类男孩）
 : 出生于火星。Mico 的主人与好朋友。
@@ -140,6 +140,8 @@ Andy（人类男孩）
 - > “你觉得，地球美好不？”Andy 问 Mico。
 
   这句话出自电影《流浪地球 2》中的一句台词。
+
+<!-- collapse-end -->
 
 ## 脚注
 
