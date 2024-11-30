@@ -1,6 +1,6 @@
 ---
 layout: compress
-permalink: /feed.xml
+permalink: /feed-en.xml
 # Atom Feed, reference: https://validator.w3.org/feed/docs/atom.html
 ---
 
@@ -22,7 +22,15 @@ permalink: /feed.xml
   <icon>{{ site.baseurl }}/assets/img/favicons/favicon.ico</icon>
   <logo>{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png</logo>
 
-{% for post in site.posts limit: 5 %}
+{% assign count = 0 %}
+{% for post in site.posts %}
+  {% if count == 8 %}
+    {% break %}
+  {% endif %}
+  {% unless post.lang == 'en' %}
+    {% continue %}
+  {% endunless %}
+  {% assign count = count | plus: 1 %}
   {% assign post_absolute_url = post.url | absolute_url %}
   <entry>
     <title>{{ post.title }}</title>
