@@ -21,9 +21,7 @@ permalink: /memset0x3f
 - **By downloading any of the files in this section, you are deemed to have read and agreed to [memset(0x3f) Music Copyright Notice](/music-copyright).**
 - You need [GIMP](https://www.gimp.org/) to open XCF files.
 - It is recommended to open SVG files via [Inkscape](https://inkscape.org/).
-- If you need lossless audio (WAV format) for any of these songs, you can:
-  - Download them directly on [Netease Cloud Music](https://music.163.com/#/artist?id=61854940) (paid),
-  - **OR** send me an e-mail (address can be found in the "Links" dropdown menu) with a description of the purpose and I'll send it to you for free.
+- You can purchase the lossless WAV format tracks on [Netease Cloud Music](https://music.163.com/#/artist?id=61854940) and [Bandcamp](https://memset0x3f.bandcamp.com/).
 
 ### Logo
 
@@ -33,8 +31,12 @@ Intro Animation (made with CSS, open the html file in your browser) | [HTML](htt
 
 ### Original Singles
 
+<!--prettier-ignore-start-->
+
 > For tracks whose artwork's author is specially annotated, the artwork is copyrighted to the original artist. Please ask their permission before using those artworks.
-> {: .prompt-info }
+{: .prompt-info }
+
+<!--prettier-ignore-end-->
 
 memset(0x3f) - Disk New <br> ![disknew.png](https://storage.live.com/items/5FA5DFAE47A544F!121300:/disknew.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121299:/memset(0x3f)%20-%20Disk%20New.mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121300:/disknew.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121301:/disknew.xcf?authkey=%21AC_KgUZjY4lFAV8)
 
@@ -52,7 +54,11 @@ memset(0x3f) - Everett's Law <br> A failed entry for vivid/stasis 2024 Song Cont
 
 ### Remixes
 
+<!--prettier-ignore-start-->
+
 > **Note**: Some remixes are not officially permitted by the original author.
-> {: .prompt-warning }
+{: .prompt-warning }
+
+<!--prettier-ignore-end-->
 
 Darude - Sandstorm (0x3f Bootleg) <br> ![sandstorm-remix.png](https://storage.live.com/items/5FA5DFAE47A544F!121324:/sandstorm-remix.png?authkey=%21AC_KgUZjY4lFAV8){: w="160" h="160"} | [MP3](<https://storage.live.com/items/5FA5DFAE47A544F!121325:/Sandstorm(0x3f%20Bootleg).mp3?authkey=%21AC_KgUZjY4lFAV8>) | [PNG](https://storage.live.com/items/5FA5DFAE47A544F!121324:/sandstorm-remix.png?authkey=%21AC_KgUZjY4lFAV8) | [XCF](https://storage.live.com/items/5FA5DFAE47A544F!121323:/sandstorm-remix.xcf?authkey=%21AC_KgUZjY4lFAV8)

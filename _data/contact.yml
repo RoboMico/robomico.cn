@@ -16,6 +16,10 @@
   icon: "fa-brands fa-youtube"
   url: "https://www.youtube.com/@robomico"
 
+- type: bandcamp
+  icon: "fa-brands fa-bandcamp"
+  url: "https://memset0x3f.bandcamp.com/"
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
