@@ -1,0 +1,96 @@
+@use '../../abstracts/variables' as v;
+@use '../../abstracts/breakpoints' as bp;
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#memset0x3f-banner {
+  height: calc(100vh - v.$topbar-height);
+  background-color: #292929;
+  font-family: var(--bs-font-monospace),var(--bs-font-sans-serif);
+  @include bp.lt(bp.get(lg)) {
+    height: calc(100vh - v.$topbar-height-mobile);
+  }
+
+  svg {
+    margin: 5rem 2rem;
+    max-height: 350px;
+    max-width: 100%;
+    .blink {
+      opacity: 0;
+      animation: fadeIn 1s 1.5s, blink 1.5s infinite steps(1, start) 2s;
+    }
+  }
+  p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    // margin-bottom: 3rem;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s forwards;
+  }
+  .button-group {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s forwards;
+    .button-subgroup {
+      display: inline-flex;
+      flex-direction: row;
+      text-align: center;
+      align-items: center;
+      @include bp.lt(bp.get(lg)) {
+        flex-direction: column;
+      }
+    }
+  }
+  .fake-button {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: 1rem 2rem;
+    border-radius: 32px;
+    box-shadow: 2px 2px 3px black;
+    i {
+      padding-right: 0.5rem;
+    }
+    a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+    }
+    a:hover {
+      color: white !important;
+    }
+    &.button-bili {
+      background-color: #00b3ee;
+    }
+    &.button-yt {
+      background-color: #ff0000;
+    }
+    &.button-ncm {
+      background-color: #e60026;
+    }
+    &.button-bc {
+      background-color: #00a1d6;
+    }
+  }
+}

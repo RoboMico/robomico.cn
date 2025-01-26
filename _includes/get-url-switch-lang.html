@@ -1,0 +1,25 @@
+{% assign dest_url = include.url %}
+{% assign _t = dest_url | remove_first: "/posts" %}
+
+{% comment %} to zh-CN {% endcomment %}
+{% if include.lang == "en" %}
+  {% if _t != dest_url and _t != "" %}
+    {% assign dest_url = include.url | replace_first: "-en/", "-zh-CN/" %}
+  {% else %}
+    {% assign dest_url = "/zh-CN" | append: dest_url %}
+  {% endif %}
+
+{% comment %} to en {% endcomment %}
+{% else %}
+  {% if _t != dest_url and _t != "/zh-CN" %}
+    {% assign dest_url = dest_url | replace_first: "-zh-CN/", "-en/" %}
+  {% else %}
+    {% assign dest_url = dest_url | remove_first: "/zh-CN" %}
+  {% endif %}
+{% endif %}
+
+{% if include.lang == "zh-CN" and include.url == "/zh-CN" %}
+  {% assign dest_url = "/" %}
+{% endif %}
+
+{{ dest_url }}

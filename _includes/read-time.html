@@ -4,7 +4,11 @@
 
 <!-- words per minute -->
 
-{% assign wpm = 180 %}
+{% if include.lang == "zh-CN" %}
+  {% assign wpm = 260 %}
+{% else %}
+  {% assign wpm = 180 %}
+{% endif %}
 {% assign min_time = 1 %}
 
 {% assign read_time = words | divided_by: wpm %}

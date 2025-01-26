@@ -1,6 +1,26 @@
 # The layout text of site
 
+bio: "Robot Enjoyer / YouTuber / Minecrafter / Rhythm Games Player / Programmer / Tech Lover / Chinese 🇨🇳"
+memset-slogan: 'Music from a <font color="#4493fc">rational</font> mind.'
+ncm: "Netease Cloud Music"
 # ----- Commons label -----
+
+spoiler-summary: "Click to Unfold"
+
+buttons:
+  view-source: "View the Source Code of This Page"
+  switch-theme: "Switch Light/Dark Theme"
+  switch-language: "Switch Language"
+
+contacts:
+  bilibili: Bilibili
+  twitter: Twitter (x.com)
+  github: GitHub
+  ncm: Netease Cloud Music
+  youtube: YouTube
+  bandcamp: Bandcamp
+  email: Email
+  rss: RSS Feed
 
 layout:
   post: Post
@@ -11,10 +31,18 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home
+  memset0x3f: memset(0x3f)
   categories: Categories
   tags: Tags
-  archives: Archives
+  timeline: Timeline
   about: About
+  gallery: Gallery
+  blog: Blog
+  links: Links
+
+footer-links:
+  privacy: Privacy Policy
+  copyright: Music Copyright
 
 # the text displayed in the search bar & search results
 search:
@@ -40,7 +68,7 @@ copyright:
     Except where otherwise noted, the blog posts on this site are licensed
     under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
 
-meta: Using the :THEME theme for :PLATFORM.
+meta: Built with :PLATFORM using modified :THEME theme.
 
 not_found:
   statement: Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.

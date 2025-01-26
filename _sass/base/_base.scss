@@ -38,6 +38,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   background: var(--main-bg);
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
@@ -214,12 +215,6 @@ main {
 
   ::marker {
     color: var(--text-muted-color);
-  }
-
-  .table-wrapper > table {
-    @include bp.lg {
-      min-width: 70%;
-    }
   }
 } /* .content */
 
@@ -412,20 +407,10 @@ mjx-container {
   @include mx.pl-pr(0);
 
   @include bp.lt(bp.get(lg)) {
-    @include mx.slide;
-  }
-
-  @include bp.lg {
-    margin-left: v.$sidebar-width;
-  }
-
-  @include bp.xxxl {
-    margin-left: v.$sidebar-width-large;
+    transition: filter 0.4s cubic-bezier(0.16, 1, 0.5, 1);
   }
 
   > .container {
-    min-height: 100vh;
-
     @include bp.lte(bp.get(md)) {
       @include mx.max-w-100;
       @include mx.pl-pr(0);
@@ -472,5 +457,32 @@ mjx-container {
 
   > :not(script) {
     margin-top: 3rem;
+  }
+}
+
+/* --- banner --- */
+banner {
+  display: block;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+#topbar-placeholder {
+  display: block;
+  height: v.$topbar-height-mobile;
+}
+
+@include bp.lt(bp.get(lg)) {
+  .mobile-hide {
+    display: none !important;
+  }
+}
+@include bp.lg {
+  .mobile-show {
+    display: none !important;
   }
 }

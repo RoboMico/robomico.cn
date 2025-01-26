@@ -18,6 +18,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   width: v.$sidebar-width;
   background: var(--sidebar-bg);
   border-right: 1px solid var(--sidebar-border-color);
+  display: none;
+  z-index: 10086 !important;
 
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -31,6 +33,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   @include bp.lt(bp.get(lg)) {
     @include mx.slide;
 
+    display: flex;
     transform: translateX(-#{v.$sidebar-width}); /* hide */
     -webkit-transform: translateX(-#{v.$sidebar-width});
 
@@ -159,7 +162,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 
       &.active {
         .nav-link {
-          color: var(--sidebar-active-color);
+          color: var(--mico-orange);
           background-color: var(--sidebar-hover-bg);
 
           span {
@@ -250,9 +253,9 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 } /* #sidebar */
 
 [#{$sidebar-display}] {
-  #main-wrapper {
+  #main-wrapper, banner {
     @include bp.lt(bp.get(lg)) {
-      transform: translateX(v.$sidebar-width);
+      filter: brightness(0.5);
     }
   }
 }

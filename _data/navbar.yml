@@ -1,0 +1,33 @@
+# for data-driven navbar and sidebar
+
+- name: home
+  url: /
+  icon: "fa-solid fa-house"
+
+- name: memset0x3f
+  url: /memset0x3f
+  icon: "fa-solid fa-music"
+
+- name: gallery
+  url: /gallery
+  icon: "fa-solid fa-image"
+
+- name: about
+  url: /about
+  icon: "fa-solid fa-circle-info"
+
+- name: blog
+  url: /post-list
+  icon: "fa-solid fa-newspaper"
+  dropdown:
+    - name: tags
+      url: /tags
+      icon: "fa-solid fa-tags"
+
+    - name: categories
+      url: /categories
+      icon: "fa-solid fa-bars-staggered"
+
+    - name: timeline
+      url: /timeline
+      icon: "fa-solid fa-timeline"

@@ -1,0 +1,17 @@
+{% if include.bg %}
+  {% assign bgstyle = "url(/assets/img/overlay.png), {{ include.bg }}" %}
+{% else %}
+  {% assign bgstyle = "url(/assets/img/banner-bg-default.png)" %}
+{% endif %}
+
+<banner id="regular-banner" style="background-image: {{ bgstyle }}">
+  <div id="banner-content">
+    <h1>
+      {% if include.title %}
+        {{ include.title }}
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+    </h1>
+  </div>
+</banner>
