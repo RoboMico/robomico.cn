@@ -4,13 +4,44 @@
   {% assign previous = site.data.locales[include.lang].post.button.previous %}
   {% assign next = site.data.locales[include.lang].post.button.next %}
 
-  {% if page.previous.url %}
+  {% assign previous_post = nil %}
+  {% assign next_post = nil %}
+
+  {% assign flag = false %}
+  {% for p in site.posts %}
+    {% if flag %}
+      {% if p.lang == page.lang %}
+        {% assign previous_post = p %}
+        {% break %}
+      {% endif %}
+    {% else %}
+      {% if p.id == page.id %}
+        {% assign flag = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign flag = false %}
+  {% for p in site.posts reversed %}
+    {% if flag %}
+      {% if p.lang == page.lang %}
+        {% assign next_post = p %}
+        {% break %}
+      {% endif %}
+    {% else %}
+      {% if p.id == page.id %}
+        {% assign flag = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% if previous_post.url %}
     <a
-      href="{{ site.baseurl }}{{ page.previous.url }}"
+      href="{{ site.baseurl }}{{ previous_post.url }}"
       class="btn btn-outline-primary"
       aria-label="{{ previous }}"
     >
-      <p>{{ page.previous.title }}</p>
+      <p>{{ previous_post.title }}</p>
     </a>
   {% else %}
     <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
@@ -18,13 +49,13 @@
     </div>
   {% endif %}
 
-  {% if page.next.url %}
+  {% if next_post.url %}
     <a
-      href="{{ site.baseurl }}{{page.next.url}}"
+      href="{{ site.baseurl }}{{ next_post.url }}"
       class="btn btn-outline-primary"
       aria-label="{{ next }}"
     >
-      <p>{{ page.next.title }}</p>
+      <p>{{ next_post.title }}</p>
     </a>
   {% else %}
     <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">
