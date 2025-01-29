@@ -251,5 +251,16 @@
 
 {% assign _content = _heading_content %}
 
+{% assign collapse_head = "<!-- collapse-start -->" %}
+{% assign collapse_tail = "<!-- collapse-end -->" %}
+
+<!-- Handle collapsible sections -->
+{% if _content contains collapse_head %}
+  {% capture _details_begin_tag %}
+    <details> <summary> {{ site.data.locales[include.lang].spoiler-summary }} </summary>
+  {% endcapture %}
+  {% assign _content = _content | replace: collapse_head, _details_begin_tag | replace: collapse_tail, "</details>" %}
+{% endif %}
+
 <!-- return -->
 {{ _content }}
