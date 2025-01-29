@@ -253,7 +253,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
 } /* #sidebar */
 
 [#{$sidebar-display}] {
-  #main-wrapper, banner {
+  #main-wrapper, div.banner {
     @include bp.lt(bp.get(lg)) {
       filter: brightness(0.5);
     }

@@ -20,7 +20,7 @@ permalink: /about
 
 ## Background Story
 
-Please read [The Origin]({{ '/tags/the-origin-series/' | relative_url }}) series novels (currently updating)!
+*WIP*
 
 ## In Real Life
 

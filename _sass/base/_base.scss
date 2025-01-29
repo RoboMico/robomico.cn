@@ -461,7 +461,7 @@ mjx-container {
 }
 
 /* --- banner --- */
-banner {
+div.banner {
   display: block;
   background-attachment: fixed;
   background-position: center top;
@@ -481,6 +481,7 @@ banner {
     display: none !important;
   }
 }
+
 @include bp.lg {
   .mobile-show {
     display: none !important;

@@ -61,7 +61,12 @@
             javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
           {%- endcapture -%}
         {% when 'rss' %}
-          {% assign url = '/feed.xml' | relative_url %}
+          {%- capture rss_url -%}
+            {% include get-rss-feed.html lang = lang %}
+          {%- endcapture -%}
+          {%- capture url -%}
+            {{ rss_url | relative_url }}
+          {%- endcapture -%}
         {% else %}
           {% assign url = entry.url %}
       {% endcase %}

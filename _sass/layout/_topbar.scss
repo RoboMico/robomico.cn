@@ -11,6 +11,7 @@
 
   @include bp.lt(bp.get(lg)) {
     @include mx.slide(top 0.2s ease);
+
     height: v.$topbar-height-mobile;
     position: fixed;
     top: 0;
@@ -25,6 +26,7 @@
   max-width: 100%;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+
   #topbar-site-title {
     display: flex;
     justify-content: flex-start;
@@ -33,36 +35,46 @@
     font-weight: 900;
     font-size: 1.5rem;
     color: var(--text-color);
+
     #avatar {
       width: 3rem;
       height: 3rem;
     }
   }
+
   #topbar-navbar {
     display: flex;
     height: 100%;
     align-items: center;
+
     nav {
       margin-left: 1rem;
       margin-right: 1rem;
+
       a {
         @extend %clickable-transition;
+
         color: var(--text-color);
+
         &:hover {
           @extend %link-hover;
-          border-bottom: 0px;
+
+          border-bottom: 0;
         }
       }
     }
+
     .with-dropdown {
       .dropdown-menu {
         @extend %clickable-transition;
+
         visibility: hidden;
         opacity: 0;
         transform: translateY(-10px);
         display: block;
         position: absolute;
         background: var(--topbar-bg);
+
         a {
           display: block;
           text-decoration: none;
@@ -70,6 +82,7 @@
           padding: 0.75rem 0.75rem;
         }
       }
+
       &:hover .dropdown-menu {
         visibility: visible;
         opacity: 1;
@@ -77,22 +90,29 @@
       }
     }
   }
+
   #topbar-options {
     display: flex;
     justify-content: flex-end;
     margin-right: 0.3rem;
+
     .btn {
       @extend %clickable-transition;
+
       margin-right: 1rem;
+
       &:hover {
         @extend %link-hover;
-        border-bottom: 0px;
+
+        border-bottom: 0;
       }
     }
   }
+
   #topbar-mobile-menu {
     justify-content: flex-start;
   }
+
   #topbar-mobile-title {
     font-size: 1.1rem;
     font-weight: 600;
@@ -101,15 +121,19 @@
     text-align: center;
     justify-content: flex-start;
   }
+
   #topbar-mobile-language {
     justify-content: flex-end;
     margin-right: 1rem;
     display: flex;
+
     a {
       @extend %clickable-transition;
+
       &:hover {
         @extend %link-hover;
-        border-bottom: 0px;
+
+        border-bottom: 0;
       }
     }
   }

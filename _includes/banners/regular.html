@@ -4,7 +4,7 @@
   {% assign bgstyle = "url(/assets/img/banner-bg-default.png)" %}
 {% endif %}
 
-<banner id="regular-banner" style="background-image: {{ bgstyle }}">
+<div id="regular-banner" class="banner" style="background-image: {{ bgstyle }}">
   <div id="banner-content">
     <h1>
       {% if include.title %}
@@ -14,4 +14,4 @@
       {% endif %}
     </h1>
   </div>
-</banner>
+</div>
