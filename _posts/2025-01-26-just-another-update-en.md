@@ -19,7 +19,7 @@ So I have to spend a whole day remaking the site from scratch.
   - Re-edited SCSS files and HTML layouts, as well as cleaned up some sh!t codes
   - The commits history is lost but I think nobody cares `¯\_(ツ)_/¯`
 - Introduced `jekyll-paginator-v2` to add paging function for post list
-- The site is not hosted on Cloudflare Pages. You can always trust their global CDN!
+- The site is now hosted on Cloudflare Pages. You can always trust their global CDN!
 - Static files on the site are now hosted on Cloudflare R2. ~~(cloudflare you are my father)~~
 - All files provided by jsdelivr are now linked to mirror sites. This shouldn't make any difference for most of the international readers, since they can be redirected to original links when appropriate.
 - Some posts are gone but I won't tell you why :P

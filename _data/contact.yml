@@ -2,9 +2,6 @@
   icon: "fa-brands fa-bilibili"
   url: "https://space.bilibili.com/40201225"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
-
 - type: github
   icon: "fab fa-github"
 
