@@ -24,7 +24,7 @@ permalink: /about
 
 ## In Real Life
 
-- An average student in senior high (in Senior grade so plz do not disturb me)
+- Incoming college student (_gaokao_ is over lets gooooooo)
 - Lives in Jiangxi Province, China
 - Natively speaking Chinese, English is ok for simple conversations
 - _Used-to-be_ Competitive Programming (CP) player, Provincial First Prize winner in NOIP 2023
