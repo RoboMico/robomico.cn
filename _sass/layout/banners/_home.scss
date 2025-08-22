@@ -1,10 +1,15 @@
 #home-banner {
-  background-image: url(/assets/img/overlay.png), url(https://static.robomico.cn/homepage-bg.png);
+  background-image: url(/assets/img/overlay.png),
+    url(https://static.robomico.cn/homepage-bg.png);
   line-height: 1.75;
   #banner-content {
-    padding: 12rem 0 12rem 0;
     color: white;
     font-size: 1.3rem;
     text-shadow: 2px 2px 3px black;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
   }
 }

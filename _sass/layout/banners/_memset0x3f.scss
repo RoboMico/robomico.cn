@@ -22,6 +22,10 @@
   height: calc(100vh - v.$topbar-height);
   background-color: #292929;
   font-family: var(--bs-font-monospace),var(--bs-font-sans-serif);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @include bp.lt(bp.get(lg)) {
     height: calc(100vh - v.$topbar-height-mobile);
   }
