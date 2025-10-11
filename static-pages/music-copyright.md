@@ -25,7 +25,7 @@ permalink: /music-copyright
 
 The rights to use for commercial and non-commercial purposes and the right to redistribute are **freely available**.
 
-Downloading my music in MP3 format is **free**.
+Downloading my music in MP3/OGG format is **free**. (Songs released after October 2025 use OGG as the free download format)
 
 Downloading my music in lossless WAV format is **paid**. You can purchase the singles on NetEase Cloud Music (2 CNY/track) or Bandcamp ($0.5/track).
 

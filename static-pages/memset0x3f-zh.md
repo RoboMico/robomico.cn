@@ -48,9 +48,11 @@ permalink: /zh-CN/memset0x3f
 
 **Melee Droid Tier 2** <br> ArtifiSouls 同人曲目 <br> 曲绘作者：[Soap](https://artifisoap.carrd.co/) <br> ![md-t2.png](https://static.robomico.cn/music/md-t2/cover.png){: w="160" h="160"} | [PNG](https://static.robomico.cn/music/md-t2/cover.png) | [XCF](https://static.robomico.cn/music/md-t2/cover.xcf) | [SVG](https://static.robomico.cn/music/md-t2/cover-elem.svg) | [MP3](https://static.robomico.cn/music/md-t2/memset%280x3f%29%20-%20Melee%20Droid%20Tier%202.mp3)
 
-**Everett's Law** <br> vivid/stasis 2024 公募落选 <br> （无曲绘） | [MP3](https://static.robomico.cn/music/everetts-law/Everett%27s%20Law.mp3)
+**Everett's Law** <br> vivid/stasis 2024 公募落选 <br> ![cover.png](https://static.robomico.cn/music/everetts-law/cover.png){: w="160" h="160"} | [PNG](https://static.robomico.cn/music/everetts-law/cover.png) | [SVG](https://static.robomico.cn/music/everetts-law/cover.svg) | [MP3](https://static.robomico.cn/music/everetts-law/Everett%27s%20Law.mp3)
 
 **Stargate** <br> ArtifiSouls 同人曲目 <br> 曲绘作者：[山下鸭鸭窝](https://space.bilibili.com/5695485) <br> ![cover.png](https://static.robomico.cn/music/stargate/cover.png){: w="160" h="160"} | [PNG](https://static.robomico.cn/music/stargate/cover.png) | [MP3](https://static.robomico.cn/music/stargate/Stargate.mp3)
+
+**Starflowing** <br> ![cover.png](https://static.robomico.cn/music/starflowing/cover.png){: w="160" h="160"} | [PNG](https://static.robomico.cn/music/starflowing/cover.png) | [SVG](https://static.robomico.cn/music/starflowing/cover.svg) | [OGG](https://static.robomico.cn/music/starflowing/Starflowing-Final.ogg)
 
 ### Remixes
 
