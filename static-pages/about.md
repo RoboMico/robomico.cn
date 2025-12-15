@@ -24,10 +24,10 @@ permalink: /about
 
 ## In Real Life
 
-- Incoming college student (_gaokao_ is over lets gooooooo)
-- Lives in Jiangxi Province, China
+- Undergraduate [@DUT](https://www.dlut.edu.cn/), majoring Software Engineering
+- Hometown is in Jiangxi, China
 - Natively speaking Chinese, English is ok for simple conversations
-- _Used-to-be_ Competitive Programming (CP) player, Provincial First Prize winner in NOIP 2023
+- Competitive Programming (CP) player
 
 ## Contacts
 
