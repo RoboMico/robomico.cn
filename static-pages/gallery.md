@@ -32,6 +32,9 @@ _By [E-Slug][e-slug]_
 ![cute-avatar.png](https://static.robomico.cn/fanart/cute-avatar.png){: w="600"}
 _Originally by [Nick_Kloppy][nick_kloppy], redrawn & colored by me_
 
+![pazzi.png](https://static.robomico.cn/fanart/pazzi.png){: w="750"}
+_By [Pazzi][pazzi]_
+
 ---
 
 > Three variations of my logo.
@@ -53,3 +56,4 @@ Spring / Autumn | Summer | Winter
 [ultrio]: https://ultriog.github.io/ultrio-base-website/
 [e-slug]: https://twitter.com/ThaE_Slug
 [nick_kloppy]: https://twitter.com/Nick_Kloppy
+[pazzi]: https://space.bilibili.com/1618790669

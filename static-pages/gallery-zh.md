@@ -33,6 +33,9 @@ _作者：[E-Slug][e-slug]_
 ![cute-avatar.png](https://static.robomico.cn/fanart/cute-avatar.png){: w="600"}
 _原画作者：[Nick_Kloppy][nick_kloppy]，重绘+上色：我_
 
+![pazzi.png](https://static.robomico.cn/fanart/pazzi.png){: w="750"}
+_作者：[老帕奇pazzi][pazzi]_
+
 ---
 
 > _Logo 的三种样式。_
@@ -54,3 +57,4 @@ _原画作者：[Nick_Kloppy][nick_kloppy]，重绘+上色：我_
 [ultrio]: https://ultriog.github.io/ultrio-base-website/
 [e-slug]: https://twitter.com/ThaE_Slug
 [nick_kloppy]: https://twitter.com/Nick_Kloppy
+[pazzi]: https://space.bilibili.com/1618790669
